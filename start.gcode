@@ -1,8 +1,10 @@
 M220 S100 ;Reset Feedrate
 M221 S100 ;Reset Flowrate
 
-G28 ;Home
-M420 S1 ;Load Bed Mesh Level
+G90 		;Set Absolute Positioning
+G28 		;Home
+M420 S1     	;Load Bed Mesh Level
+M900 K0.075 	;Set K-Factor for Linear Advance
 
 ;Prime the nozzle
 G92 E0               ;Reset Extruder
