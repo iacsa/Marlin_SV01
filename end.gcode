@@ -8,7 +8,7 @@ G0 X0 Y{machine_depth} F3600 	;Present print
 
 
 M400 				;Wait for all moves to finish
-M106 S0 			;Turn-off fan
+M107				;Turn-off fan
 M104 S0 			;Turn-off hotend
 M140 S0 			;Turn-off bed
 
