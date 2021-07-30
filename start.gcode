@@ -4,7 +4,10 @@ M221 S100 ;Reset Flowrate
 G90 		;Set Absolute Positioning
 G28 		;Home
 M420 S1     	;Load Bed Mesh Level
-M900 K0.075 	;Set K-Factor for Linear Advance
+
+;Set K-Factor for Linear Advance
+M900 K0.07 	;PLA
+;M900 K0.88 	;TPU
 
 ;Prime the nozzle
 G92 E0               ;Reset Extruder
